@@ -11,7 +11,7 @@ npm install
 ```
 2) run Gulp's default task by typing the following command:
 ```
-"node_modules\.bin\gulp"
+node_modules\.bin\gulp
 ```
 or type just "gulp" if Gulp is already installed globally on your system.
 The Gulp's default task will perform:
