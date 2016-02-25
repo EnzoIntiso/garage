@@ -18,6 +18,7 @@ The Gulp's default task will perform:
 - cleaning of the builder folders from eventual preexisting files
 - image sprite creation with the relative stylesheet
 - import in a dedicated subfolder of the app of the necessary minified libraries and stylesheets from the standard folder "node_modules"
+- JavaScript files linting
 - SASS files linting
 - SASS files compiling
 - compiled SASS files concatenation with other existing stylesheets in un one single CSS file
