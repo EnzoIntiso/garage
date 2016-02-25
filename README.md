@@ -24,7 +24,7 @@ The Gulp's default task will perform:
 - minification of the CSS concatenated file
 - injection of the minified CSS file into index.html
 
-<p></p>
+<br /><br />
 
 ####NOTES ABOUT GULP TASKS
 1. All the mentioned Gulp sub-tasks are implemented individually and can be run separately.
@@ -37,7 +37,7 @@ node_modules\.bin\gulp default-no-min-styles
 3. Watchers tasks are also provided (respectively "watch" and "watch-no-min-styles" for including and stylesheets excluding minification).
 4. Naturally more subtasks can be added/piped (e.g. HTML minification is implemented - "minify-html" - but not piped; image optimizations/compression is missing; ecc), but, for the sake of the code readability or because they would not have broguht any no real benefits to the application at this stage, they were omitted.
 
-<p></p>
+<br /><br />
 
 ##Behind the scenes
 
