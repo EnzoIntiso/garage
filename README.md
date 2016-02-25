@@ -23,8 +23,7 @@ The Gulp's default task will perform:
 - compiled SASS files concatenation with other existing stylesheets in un one single CSS file
 - minification of the CSS concatenated file
 - injection of the minified CSS file into index.html
-
-<br /><br />
+<br />
 
 ####NOTES ABOUT GULP TASKS
 1. All the mentioned Gulp sub-tasks are implemented individually and can be run separately.
