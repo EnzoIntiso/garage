@@ -1,0 +1,47 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-clear_cache {
+  background-image: url(../imgs/sprites/icons.png);
+  background-position: -40px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-garage {
+  background-image: url(../imgs/sprites/icons.png);
+  background-position: 0px 0px;
+  width: 40px;
+  height: 40px;
+}
+.icon-settings {
+  background-image: url(../imgs/sprites/icons.png);
+  background-position: 0px -40px;
+  width: 24px;
+  height: 24px;
+}
+.icon-vehicles_deregister {
+  background-image: url(../imgs/sprites/icons.png);
+  background-position: -24px -40px;
+  width: 24px;
+  height: 24px;
+}
+.icon-vehicles_list {
+  background-image: url(../imgs/sprites/icons.png);
+  background-position: -64px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-vehicles_register {
+  background-image: url(../imgs/sprites/icons.png);
+  background-position: -64px -24px;
+  width: 24px;
+  height: 24px;
+}

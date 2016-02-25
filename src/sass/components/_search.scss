@@ -1,0 +1,169 @@
+.navbar-search {
+
+	&__form {
+		clear: both;
+		height: $navbar-height;
+		width: auto;
+		
+		@include respond-to(from-medium-screens) { 
+			clear: none;
+			float: right;
+			//display: none;
+		}
+	}
+
+	&__cell {
+		padding-right: 0.3rem;
+		text-align: left;
+		vertical-align: middle;
+		
+		@include respond-to(from-handhelds-landscape) {
+			padding-right: 1.5rem;
+		}
+		
+		input,
+		select {
+			height: $search-input-height;
+		}
+		
+		&:nth-last-child(2) {			
+			@include respond-to(from-handhelds-landscape) {
+				padding-right: 0.8rem;
+			}
+		}
+		
+		&:last-child {
+			padding-right: 0.3rem;
+		}
+	
+		&-keyword {
+			padding-left: 0.5rem;
+
+			input {
+				background-color: $search-input-background-color;
+				border: 0;
+				//height: 2.6rem;
+				width: 8rem;
+				
+				@include respond-to(from-handhelds-landscape) {
+					width: 12rem;
+				}
+				
+				@include respond-to(from-medium-screens) {
+					background: $search-input-background-color url('../imgs/svg/search.svg') no-repeat 0.4rem center;
+					background-size: auto 1.4rem; //auto 1.8rem;
+					padding-left: 3rem;
+					width: 12rem;
+				}
+			}
+		}
+		
+		&-submit {
+		
+			input {
+				float: left;
+			}
+		}
+	}
+	
+	&__label {
+		&[for='button_search'] {
+			visibility: hidden;
+			
+			@include respond-to(from-medium-screens) { 
+				display: none;
+			}
+		}
+		
+		&::after {
+			content: ':\A';
+			
+			@media only screen and (max-width: 465px) {
+				white-space: pre;
+			}
+		}
+	}
+}
+
+.inpage-search {
+	
+	@include respond-to(from-medium-screens) {
+		display: table-cell;
+		padding-right: 1rem;
+		position: fixed;
+		text-align: left;
+		vertical-align: top;
+		width: $search-inpage-width;
+	}
+
+	&__cell {
+		padding-top: 1.5rem;
+		vertical-align: middle;
+		
+		select {
+			height: $search-input-height;
+		}
+
+		&-keyword {
+
+			input {
+				background: $search-input-background-color url('../imgs/svg/search.svg') no-repeat 0.4rem center;
+				background-size: auto 1.4rem; //auto 1.8rem;
+				border: 0;
+				height: 2.6rem;
+				padding-left: 3rem;
+				width: 100%;
+			}
+		}
+		
+		&-submit {
+			text-align: center;
+		
+			.button-submit {
+				background-color: $search-input-background-color;
+				border: 1px solid $search-button-border-color;
+				border-radius: 0.4rem;
+				color: $black;
+				display: inline-block;
+				font-weight: bold;
+				padding: 0.5rem 0.7rem 0.5rem 0.5rem;
+				text-decoration: none;
+				
+				&:hover {
+					background-color: $search-button-hover-color;
+				}
+			}
+		
+			input {	
+				height: 1.7rem;
+				vertical-align: middle;
+				width: 1.7rem;
+			}
+			
+			label {
+				cursor: pointer;
+			}
+		}
+	}
+	
+	&__label {
+		font-size: 1.1rem;
+		text-transform: uppercase;
+				
+		&::after {
+			content: ':\A';
+			white-space: pre;
+		}
+		
+		&[for='button_search'] {
+			cursor: pointer;
+			font-size: 1.2rem;
+			vertical-align: middle;
+			
+			&::after {
+				content: '';
+				white-space: initial;
+			}
+		}
+	}
+}

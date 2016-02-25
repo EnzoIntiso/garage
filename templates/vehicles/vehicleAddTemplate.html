@@ -1,0 +1,44 @@
+<div class="vehicle-add">
+	<p class="message hidden"></p>
+	<form class="inpage vehicle-add__form">
+		<fieldset>
+			<legend>Vehicle Data</legend>
+			<ul>
+				<li>
+					<label for="id">Licence Plate</label>
+					<input type="text" id="id" name="id" class="input-licence" value="" maxlength="15">
+				</li>
+				<li>
+					<label for="type">Vehicle Type</label>
+					<select size="1" id="type" name="type">
+						<option value=""></option>
+						<option value="Car">Car</option>
+						<option value="Motorbike">Motorbike</option>
+					</select>
+				</li>
+				
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>Parking</legend>
+			<ul>
+				<li>
+					<label for="level">Level</label>
+					<input type="number" min="1" max="<%= formDataCfg.max_level %>" step="1" id="level" name="level" class="number" value="">
+				</li>
+				<li>
+					<label for="slot">Slot</label>
+					<input type="number" min="1" max="<%= formDataCfg.max_slot %>" step="1" id="slot" name="slot" class="number" value="">
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="note">
+			<p class="note">The maximum number of levels and slots can be configured in the settings pannel.<br />
+			All fields are mandatory.</p>
+		</fieldset>
+		
+		<button type="submit" name="button_save" class="big">Register</button>
+
+	</form>
+	
+</div>

@@ -1,0 +1,74 @@
+{
+	"folders": {
+		"css_folder": "css",
+		"javascript_folder": "js",
+		"image_folder": "imgs",
+		"sprites_folder": "sprites"
+	},
+	
+	"paths": {
+		"source": {
+			"root": "src",
+			"javascript": [ "src/js/**/*.js" ],
+			"backbone": [ "app/**/*.js", "!app/libs/**/*.js" ],
+			"sass_to_compile": [ "src/sass/main.scss" ],
+			"sass": [ "src/sass/**/*.{sass,scss}" ],
+			"css": [ "src/css/**/*.css" ],
+			"css_to_delete": [ "src/css/**/*.css", "!src/css/sprites/**/*.css", "!src/css/vendors/**/*.css" ],
+			"images": [ "src/imgs/**/*.{jpeg,jpg,png,gif}" ],
+			"sprites": [ "src/imgs/sprites/*.{jpeg,jpg,png,gif}" ],
+			"html": [ "index.{htm,html}" ]
+		},
+		"destination": {
+			"css": [ "assets/css" ],
+			"sprites": [ "assets/imgs/sprites" ]
+		},
+		"build": {
+			"root": "assets",
+			"css": [ "assets/css/**/*.css" ]
+		}
+	},
+	
+	"libmap": {
+		"Backbone": {
+			"source": "node_modules/backbone/backbone-min.js",
+			"target": "app/libs/backbone"
+		},
+		"Backbone_Localstorage": {
+			"source": "node_modules/backbone.localstorage/backbone.localStorage-min.js",
+			"target": "app/libs/backbone/extensions"
+		},
+		"jQuery": {
+			"source": "node_modules/jquery/dist/jquery.min.js",
+			"target": "app/libs/jquery"
+		},
+		"Requirejs": {
+			"source": "node_modules/requirejs/require.js",
+			"target": "app/libs/require"
+		},
+		"Requirejs_Text": {
+			"source": "node_modules/requirejs-text/text.js",
+			"target": "app/libs/require"
+		},
+		"Slideout": {
+			"source": "node_modules/slideout/dist/slideout.min.js",
+			"target": "app/libs/slideout"
+		},
+		"Sumoselect": {
+			"source": "node_modules/sumoselect/jquery.sumoselect.min.js",
+			"target": "app/libs/jquery/extensions"
+		},
+		"Underscore": {
+			"source": "node_modules/underscore/underscore-min.js",
+			"target": "app/libs/underscore"
+		},
+		"Underscore_Map": {
+			"source": "node_modules/underscore/underscore-min.map",
+			"target": "app/libs/underscore"
+		},
+		"libs_custom": {
+			"source": "src/js/libs/**/*.js",
+			"target": "app/libs"
+		}
+	}
+}

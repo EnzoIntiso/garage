@@ -1,0 +1,26 @@
+<div class="table">
+	<div class="table__cell--fluid vehicles__pagination-info">
+		<div class="vehicles__pagination-range">
+			<% 	if (pagination.total_results > 0) {
+					var from_page = ((pagination.page-1)*pagination.per_page)+1;
+				} else {
+					var from_page = 0;
+				} %>
+			<span class="vehicles__pagination-range-from"><%= from_page %></span><br />
+			<% 	if (pagination.page < pagination.total_pages) {
+					var to_page = pagination.page*pagination.per_page;
+				} else {
+					var to_page = pagination.total_results;
+				} %>
+			<span class="vehicles__pagination-range-to"><%= to_page %></span>
+		</div>
+		<div class="vehicles__pagination-total-results">
+			/<span class="vehicles__pagination-total-results-value"><%= pagination.total_results %></span><sup class="vehicles__pagination-total-results-sup">VEHICLES</sup>
+		</div>
+	</div>
+	<div class="table__cell vehicles__pagination-gopage">
+		<span class="vehicles__pagination-gopage--prev stretch <% if (pagination.page > 1) { %>active<% } %>" data-gopage="-1">&#8743;</span>
+		<span class="vehicles__pagination-gopage--next stretch <% if (pagination.page < pagination.total_pages) { %>active<% } %>" data-gopage="1">&#8744;</span>	
+	</div>
+	<div class="table__cell--fluid vehicles__pagination-dummy"></div>
+</div>

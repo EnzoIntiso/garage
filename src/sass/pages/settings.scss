@@ -1,0 +1,25 @@
+.settings {
+	padding: 0 2rem;
+	text-align: center;
+
+	&__form {
+		
+		label {
+			min-width: 14rem;
+		}
+	}
+	
+	.input-number {
+		width: 10rem;
+	}
+	
+	p {
+		&.note {
+			display: inline-block;
+			font-size: 1.2rem;
+			margin: 0;
+			padding: 0;
+			width: 20rem;
+		}
+	}
+}

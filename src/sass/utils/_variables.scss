@@ -1,0 +1,92 @@
+//*** COLORS ***//
+$black: #000000;
+$green: #008000;
+$light-grey: #ededed;
+$grey-medium1: #aaaaaa;
+$grey-medium2: #919191;
+$orange: #ffa500;
+$red: #ff0000;
+$white: #ffffff;
+$white-dirty: #e5e9ea;
+
+$background-color: $white;
+// header
+$header-border-top-color: $black;
+$header-border-bottom-color: #f6f6f6;
+$header-background-color: $white;
+// icons
+$icon-hamburger-color: #0084d2;
+$icon-search-color: #0084d2;
+$icon-trash-lines-background: #252527;
+// loading
+$loading-color: #c4c4c4;
+$loading-overlay-background-color: rgba(255, 255, 255, 0.6);
+$loading-overlay-background: rgba(255, 255, 255, 0.6);
+// modals
+$modal-big-text-color: #333333;
+$modal-button-background-color: #428bca;
+$modal-button-border-color: #357ebd;
+$modal-button-x-close-hover-color: #357ebd;
+$modal-overlay-background-color: rgba(0, 0, 0, 0.7);
+// pagination
+$pagination-gopage-color: #ededed;
+$pagination-gopage-active-color: #0085d2;
+$pagination-total-record-color: #b0b0b0;
+// search
+$search-input-background-color: #fff1e7;
+$search-button-border-color: #9b4b0f;
+$search-button-hover-color: #f7dac5;
+// slideout menu
+$slideout-menu-background-color: #292f3d;
+$slideout-menu-header-color: #0084d2;
+$slideout-menu-header-border-color: #2a2d2f;
+$slideout-menu-title-color: #9ca4b3;
+$slideout-menu-title-background-color: #3a4153;
+$slideout-menu-title-border-color: #242a37;
+$slideout-menu-button-color: #b3bbca;
+$slideout-menu-button-background-color: #32394a;
+$slideout-menu-button-background-hover-color: rgba(255, 255, 255, 0.1);
+$slideout-menu-button-border-light-color: #3e4555;
+$slideout-menu-button-border-dark-color: #242a37;
+$slideout-menu-button-selected-color: #242b3b;
+$slideout-overlay-background-color: rgba(41, 47, 61, 0.5);
+// vehicles delete footer
+$vehicles-delete-footer-background-color: rgba(0, 0, 0, 0.7);
+$vehicles-delete-footer-button-border-color: #979797;
+$vehicles-delete-footer-button-hover-color: $white;
+$vehicles-delete-footer-button-background-hover-color: #373737;
+
+//*** FONTS ***//
+$font-size-big: 1.8rem;
+$font-size-normal: 1.4rem;
+$font-size-small: 1.2rem;
+$font-family: 'Roboto', 'Verdana';
+
+//*** SIZES ***//
+$vehicles-list-el-line-height: 2.2rem;
+$vehicles-delete-footer-height: 4rem;
+
+$search-input-height: 2.4rem;
+
+$navbar-border-top: 1.5rem;
+$navbar-height: 5rem;
+
+$pagination-line-height: 3.2rem;
+$pagination-padding-top: 0.5rem;
+
+$search-inpage-width: 20rem;
+//*** BREAK POINTS ***//
+$break-handhelds-portrait: 320px;
+$break-handhelds-landscape: 480px;
+$break-medium: 640px;
+$break-wide: 1200px;
+
+//*** MEDIUM SCREENS ***//
+$ms-max-width-vehicles-list: 41rem;
+
+//*** WIDE SCREENS ***//
+$ws-max-width-vehicles-list: 65rem;
+
+
+
+

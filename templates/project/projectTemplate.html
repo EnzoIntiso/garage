@@ -1,0 +1,41 @@
+<div class="title container">
+	<div class="row">
+		<div class="col-xs-12"><h4>Project Specifications</h4></div>
+	</div>
+</div>
+
+<div class="panel-group">
+	<div class="panel panel-default">
+		<div class="panel-heading">Build</div>
+			<div class="panel-body">
+				<div id="notes">
+					<p>This application is built on:<br />
+					- Backbone (dep: jQuery, Underscore)<br />
+					- Requirejs<br />
+					- Boostrap<br />
+					* just for testing direct access<br />
+					Test token: 61dbf36d800b2f054361b75169ae1e10;
+					</p>
+				</div>
+			</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">Requirements</div>
+			<div class="panel-body">
+				<div id="specs">
+					<p>We'd like a single-page application written in BackboneJS, supported by the Twitter Bootstrap framework. In terms of data, it will make use of the riskmethods API (see https://developer.riskmethods.net/) and the API token 61dbf36d800b2f054361b75169ae1e10</p>
+					<p>OK 1) The app has two routes: List of vehicles and detail view of one vehicle. (No need for a login page, the token can be hardcoded.)</p>
+					<p>OK 2) At launch, the form will fetch the (first page of) vehicles from the API, or show an alert if the token was invalid.</p>
+					<p>OK 3) All vehicles are listed (paginated) with name and DUNS number and a large colored icon with a number inside with the Total Risk Score (score_card/risk_score in the JSON response). Low numbers should be green, high should be red indicating high risk.</p>
+					<p>OK 4) Clicking on a vehicle shows the detail view with the address and the names and scores of the individual Risk Groups (so one level more detail in the JSON) again colored.</p>
+					<p>OK 5) All vehicles should also have a star icon to select favorites, which should be shown both in the list and detail view.</p>
+					<p>OK 6) The list of favorites should be persisted using in-browser LocalStorage. (If you choose to use a Backbone extension for this, you're welcome to do so.)</p>
+					<p>OK 7) The app is supposed to run on desktop and mobile, so make sure to use responsive design to support both scenarios.</p>
+					<p>Should you have any question, feel free to let me know any time. And once done, please upload the app on GitHub and send us the link.</p>
+					<p>Does that work for you?</p>
+					<p>Best, Olav</p>
+					<p>P.S.: Often I get the question in what style this should be developed. There is no definite answer, just do it as you would likely do it when working for riskmethods.</p>
+				</div>
+			</div>
+	</div>
+</div>

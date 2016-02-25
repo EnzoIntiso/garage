@@ -1,0 +1,42 @@
+<div class="settings">
+	<p class="message hidden"></p>
+	<form class="inpage settings__form">
+		<fieldset>
+			<legend>Garage</legend>
+			<ul>
+				<li>
+					<label for="max_level">Number of levels*</label>
+					<input type="number" min="<%= formDataCfg.min_level %>" step="1" id="max_level" name="max_level" class="input-number" value="<%= settings.get("max_level") %>" placeholder="unlimited">
+				</li>
+				<li>
+					<label for="max_slot">Slots per level*</label>
+					<input type="number" min="<%= formDataCfg.min_slot %>" step="1" id="max_slot" name="max_slot" class="input-number" value="<%= settings.get("max_slot") %>" placeholder="unlimited">
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>Pagination</legend>
+			<ul>
+				<li>
+					<label for="per_page">Result per page</label>
+					<% var per_page = settings.get("per_page") %>
+					<select size="1" id="per_page" name="per_page" required>
+						<option value="5"<% if (per_page == 5) { %> selected<% } %>>5</option>
+						<option value="10"<% if (per_page == 10) { %> selected<% } %>>10</option>
+						<option value="20"<% if (per_page == 20) { %> selected<% } %>>20</option>
+						<option value="30"<% if (per_page == 30) { %> selected<% } %>>30</option>
+						<option value="50"<% if (per_page == 50) { %> selected<% } %>>50</option>
+						<option value="100"<% if (per_page == 100) { %> selected<% } %>>100</option>
+					</select>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="note">
+			<p class="note">* The minimum number of levels and slots is set according to the current slot occupation of the garage.</p>
+		</fieldset>
+		
+		<button type="submit" name="button_save" class="big">Save</button>
+
+	</form>
+	
+</div>

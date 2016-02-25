@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;	
+}
+
+html { 
+	font-size: 62.5% !important;
+}
+
+body {
+	color: $black;
+	font-family: $font-family;
+	font-size: $font-size-normal;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+form, 
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.page {
+	padding-top: $navbar-height + $navbar-border-top;
+	
+	&.double-header {
+		padding-top: ($navbar-height * 2) + $navbar-border-top;
+		@include respond-to(from-medium-screens) { padding-top: $navbar-height + $navbar-border-top; }
+	}		
+}
+
+
+.table {
+	display: table;
+	width: 100%;
+	
+	&__row {
+		display: table-row;
+	}
+	
+	&__cell {
+		display: table-cell;
+		
+		&--fluid {
+			display: table-cell;
+			width: 50%;
+		}
+	}
+}
+
+%red {
+	color: $red;
+}
+
+.error {
+	@extend %red;
+}
+
+.no-result {
+	@extend %red;
+	text-align: center;
+}
+
+.success {
+	color: $green;
+	font-weight: bold;
+}
+
+.fail {
+	@extend %red;
+	font-weight: bold;
+}
+
+.hidden {
+	display: none;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	select,
+	textarea,
+	input {
+		font-size: 16px !important;
+	}
+}

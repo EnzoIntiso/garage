@@ -1,0 +1,140 @@
+.container {
+	background-color: $background-color;
+	min-width: $break-handhelds-portrait - 20px;
+	
+	&__overlay {
+		background-color: $slideout-overlay-background-color;
+		left: 0;
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		transition-duration: 500ms;
+		transition-property: opacity;
+		transition-timing-function: ease-in-out;
+		
+		&.fadein {
+			height: 100%;
+			opacity: 1;
+			width: 100%;
+			z-index: 1000;
+		}
+		
+		&.fadeout {
+			opacity: 0;
+		}
+	}
+}
+
+.slideout-menu {
+	background-color: $slideout-menu-background-color;
+	bottom: 0;
+	display: none;
+	left: 0;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 256px;
+	z-index: 0;
+	
+	
+	.icon {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	a {
+		color: $slideout-menu-button-color;
+		text-decoration: none;
+	}
+	
+	&__header {
+		border-bottom: 1px solid $slideout-menu-header-border-color;
+		font-size: 2rem;
+		padding: 1rem 0;
+		text-align: left;
+		
+		&-title {
+			color: $slideout-menu-header-color;
+			display: inline-block;
+			font-weight: 400;
+			letter-spacing: 0.5px;
+			margin: 0;
+			padding-left: 0.8rem;
+			vertical-align: middle;
+		}
+		
+		.icon {
+			margin-left: 2rem;
+		}
+	}
+	
+	&__section {
+		margin: 0;
+		
+		&-title {
+			background-color: $slideout-menu-title-background-color;
+			border-bottom: 1px solid $slideout-menu-title-border-color;
+			border-top: 1px solid transparent;
+			color: $slideout-menu-title-color;
+			font-size: 13px;
+			font-weight: 200;
+			letter-spacing: 1px;
+			margin: 0;
+			padding: 6px 20px;
+			text-transform: uppercase;
+		}
+		
+		
+
+		&-list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			a {
+				background-color: $slideout-menu-button-background-color;
+				border-bottom: 1px solid $slideout-menu-button-border-dark-color;
+				border-top: 1px solid $slideout-menu-button-border-light-color;
+				display: block;
+				padding: 10px 20px;
+
+				&.active {
+					background-color: $slideout-menu-button-selected-color;
+					border-top-color: $slideout-menu-button-selected-color;
+				}
+				
+				&:not(.active):hover {
+					background-color: $slideout-menu-button-background-hover-color;
+					text-decoration: none;
+				}
+							
+				.text {
+					display: inline-block;
+					padding-left: 1rem;
+					vertical-align: middle;
+				}
+				
+			}
+		}
+	}
+}
+
+.slideout-panel {
+	background-color: $background-color;
+	min-height: 100vh;
+	position: relative;
+	//will-change: transform;
+	z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+	overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+	display: block;
+}

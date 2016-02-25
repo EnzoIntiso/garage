@@ -1,0 +1,113 @@
+@mixin repeated-linear-gradient($color) {
+	background: linear-gradient(to bottom, $color 0%, $color 20%, transparent 20%, transparent 40%, $color 40%, $color 60%, transparent 60%, transparent 80%, $color 80%, $color 100%);
+}
+
+@mixin respond-to($media) {
+	@if $media == handhelds {
+		@media only screen and (max-width: $break-medium - 1) { @content; }
+	}@else if $media == not-handhelds {
+		@media only screen and (min-width: $break-medium + 1) { @content; }
+	}@else if $media == handhelds-landscape {
+		@media only screen and (min-width: $break-handhelds-portrait) and (max-width: $break-medium - 1) { @content; }
+	}@else if $media == from-handhelds-landscape {
+		@media only screen and (min-width: $break-handhelds-landscape) { @content; }
+	}@else if $media == medium-screens {
+		@media only screen and (min-width: $break-medium) and (max-width: $break-wide - 1) { @content; }
+	}@else if $media == from-medium-screens {
+		@media only screen and (min-width: $break-medium) { @content; }
+	}@else if $media == wide-screens {
+		@media only screen and (min-width: $break-wide) { @content; }
+	}
+}
+
+@mixin icon-trash($color, $size) {
+	height: $size;
+	overflow: hidden;
+	position: relative;
+	width: $size;
+	
+	.trash {
+		&-lid {
+			background-color: $color;
+			border-top-left-radius: 80%;
+			border-top-right-radius: 80%;
+			height: 10%;
+			left: 50%;
+			margin-left: -31%;
+			position: absolute;
+			top: 10.5%;
+			transform: rotate(-5deg); 
+			width: 62%;
+			
+			&::after {
+				background-color: inherit;
+				border-top-left-radius: 30%;
+				border-top-right-radius: 30%;
+				content: '';
+				height: 100%;
+				left: 50%;
+				margin-left: -13%;
+				margin-top: -10%;
+				position: absolute;
+				transform: rotate(-1deg); 
+				width: 26%;
+			}
+		}
+		
+		&-container {
+			background-color: $color;
+			border-bottom-left-radius: 15%;
+			border-bottom-right-radius: 15%;
+			bottom: 10%;
+			height: 65%;
+			left: 50%;
+			margin-left: -28%;
+			position: absolute;
+			width: 56%;
+		
+			&::after {
+				background-color: inherit;
+				border-bottom-left-radius: 45%;
+				border-bottom-right-radius: 45%;
+				content: '';
+				height: 12%;
+				left: 50%;
+				margin-left: -55%;
+				position: absolute;
+				top: 0;
+				width: 110%;
+			}
+		
+		}
+
+		&-line-1 {
+			background-color: $icon-trash-lines-background;
+			bottom: 17%;
+			height: 50%;
+			left: 38%;
+			margin-left: -2%;
+			position: absolute;
+			width: 4%;
+		}
+
+		&-line-2 {
+			background-color: $icon-trash-lines-background;
+			bottom: 17%;
+			height: 50%;
+			left: 50%;
+			margin-left: -2%;
+			position: absolute;
+			width: 4%;
+		}
+
+		&-line-3 {
+			background-color: $icon-trash-lines-background;
+			bottom: 17%;
+			height: 50%;
+			left: 62%;
+			margin-left: -2%;
+			position: absolute;
+			width: 4.5%;
+		}
+	}
+}

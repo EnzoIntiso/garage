@@ -1,0 +1,38 @@
+<form name="form-search" action="#" method="post" class="inpage-search__form search table">
+	<div class="table__row">
+		<div class="inpage-search__cell inpage-search__cell-keyword table__cell">
+			<label for="id" class="inpage-search__label">Licence</label>
+			<input type="text" name="id" value="">
+		</div>
+	</div>
+	<div class="table__row">
+		<div class="inpage-search__cell inpage-search__cell-level table__cell">
+			<label for="level" class="inpage-search__label">Level</label>
+			<select name="level" multiple="multiple">
+				<!--option value="" selected>ALL</option-->
+				<% _.each(filters.levels, function(level){ %>
+				<option value="<%= level %>"><%= level %></option>
+				<% }); %>
+			</select>
+		</div>
+	</div>
+	<div class="table__row">
+		<div class="inpage-search__cell inpage-search__cell-type table__cell">
+			<label for="type" class="inpage-search__label">Type</label>
+			<select name="type" multiple="multiple">
+				<!--option value="" selected>ALL</option-->
+				<% _.each(filters.types, function(type){ %>
+				<option value="<%= type.toLowerCase() %>"><%= type %></option>
+				<% }); %>
+			</select>
+		</div>
+	</div>
+	<div class="table__row">
+		<div class="inpage-search__cell inpage-search__cell-submit table__cell">
+			<a href="#" class="button-submit">
+				<input name="button_search" type="image" src="../assets/imgs/svg/search.svg" value="button_search" class="icon icon-search">
+				<label for="button_search">Search</label>
+			</a>
+		</div>
+	</div>
+</form>

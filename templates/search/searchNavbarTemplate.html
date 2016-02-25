@@ -1,0 +1,26 @@
+<form name="form-search" action="#" method="post" class="navbar-search__form search table">
+	<div class="navbar-search__cell navbar-search__cell-keyword table__cell">
+		<label for="id" class="navbar-search__label">Licence</label>
+		<input type="text" name="id" value="">
+	</div>
+	<div class="navbar-search__cell navbar-search__cell-level table__cell">
+		<label for="level" class="navbar-search__label">Level</label>
+		<select name="level" multiple="multiple">
+			<% _.each(filters.levels, function(level){ %>
+			<option value="<%= level %>"><%= level %></option>
+			<% }); %>
+		</select>
+	</div>
+	<div class="navbar-search__cell navbar-search__cell-type table__cell">
+		<label for="type" class="navbar-search__label">Type</label>
+		<select name="type" multiple="multiple">
+			<% _.each(filters.types, function(type){ %>
+			<option value="<%= type.toLowerCase() %>"><%= type %></option>
+			<% }); %>
+		</select>
+	</div>
+	<div class="navbar-search__cell navbar-search__cell-submit table__cell">
+		<label for="button_search" class="navbar-search__label"></label>
+		<a href="#" class="button-submit"><input name="button_search" type="image" src="../assets/imgs/svg/search.svg" value="button_search" class="icon icon-search"></a>
+	</div>
+</form>

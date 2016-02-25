@@ -1,0 +1,23 @@
+<% if (vehicles.length > 0) { %>
+	<ul class="vehicles-list">
+	<% _.each(vehicles, function(vehicle){ %>
+		<li class="vehicles-list__item">
+			<div class="vehicles-list__item-id">
+				<span class="licenceId"><%= vehicle.get("id") %></span><br />
+				<%= vehicle.get("type") %>
+			</div>
+			<div class="vehicles-list__item-place">
+				Level: <span id="vehicles-list__item-level"><%= vehicle.get("level") %></span><br />
+				Slot: <span id="vehicles-list__item-slot"><%= vehicle.get("slot") %></span>
+			</div>
+		</li>  
+	<% }); %>
+	</ul>
+<% } else { %>
+	<p class="no-result">No matches found</p>
+<% } %>
+
+
+
+
+

@@ -1,0 +1,16 @@
+{"garage":[
+{"id":"M-X897","type":"Car","level":"10","slot":"23"},
+{"id":"Y-X523","type":"Motorbike","level":"3","slot":"8"},
+{"id":"AA-K1","type":"Airplane","level":"21","slot":"25"},
+{"id":"B-B1","type":"Car","level":"2","slot":"24"},
+{"id":"FF54","type":"Car","level":"1","slot":"14"},
+{"id":"XX-S21","type":"Motorbike","level":"3","slot":"23"},
+{"id":"90A-77","type":"Motorbike","level":"2","slot":"1"},
+{"id":"BGH674","type":"Car","level":"1","slot":"55"},
+{"id":"MU-904E","type":"Car","level":"1","slot":"7"},
+{"id":"AA-Z2","type":"Motorbike","level":"3","slot":"11"},
+{"id":"BOHO-123","type":"Motorbike","level":"5","slot":"5"},
+{"id":"EC-202EH","type":"Car","level":"3","slot":"31"},
+{"id":"COD-675I","type":"Car","level":"3","slot":"1"}
+],
+"pagination":{"page":1,"sort":"asc","per_page":3,"total_pages":1,"total_results":4}}

@@ -1,0 +1,20 @@
+.vehicle-add { 
+	padding: 0 2rem;
+	text-align: center;
+	
+	&__form {		
+		.input-licence {
+			width: 13rem;
+		}
+	}
+	
+	p {
+		&.note {
+			display: inline-block;
+			font-size: 1.2rem;
+			margin: 0;
+			padding: 0;
+			width: 26rem;
+		}
+	}
+}

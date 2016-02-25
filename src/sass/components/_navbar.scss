@@ -1,0 +1,28 @@
+.navbar {
+	display: table;
+	float: left;
+	height: $navbar-height;
+	padding-left: 0.5rem;
+	width: auto;
+	
+	&__nav-icon,
+	&__nav-title,
+	&__nav-search {
+		vertical-align: middle;
+	}	
+	
+	&__nav-icon {
+		text-align: left;
+		width: 4rem;
+	}
+	
+	&__nav-title {
+		font-size: $font-size-big;
+		padding-right: 2rem;
+		text-align: left;
+	}
+	
+	&__nav-search {
+		text-align: right;
+	}
+}

@@ -1,0 +1,19 @@
+.icon {
+	cursor: pointer;
+	display: inline-block;
+	height: 2.5rem;
+	width: 2.5rem;
+	
+	&-hamburger {
+		@include repeated-linear-gradient($icon-hamburger-color);
+		margin-top: 0.3rem;
+		
+	}
+	
+	&-trash {
+		@include icon-trash($white-dirty, 2rem);
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
